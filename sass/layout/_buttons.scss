@@ -1,0 +1,56 @@
+.search__btn {
+  background: none;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.header__buttons {
+  padding-top: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 130px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.333;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 14px 36px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: #B92F2C;
+    border: transparent;
+    -webkit-box-shadow: 5px 3px 35px 14px rgba(255, 107, 1, 0.53);
+    box-shadow: 5px 3px 35px 14px rgba(255, 107, 1, 0.53);
+  }
+}
+.btn-margin {
+  margin-right: 20px;
+}
+
+.activBtn {
+  background: #B92F2C;
+  border: transparent;
+  -webkit-box-shadow: 5px 3px 35px 14px rgba(255, 107, 1, 0.53);
+  box-shadow: 5px 3px 35px 14px rgba(255, 107, 1, 0.53);
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    width: 136px;
+  }
+  .btn-margin {
+    margin-right: 15px;
+  }
+}

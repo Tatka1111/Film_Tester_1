@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./sass/main.css" />
+
+    <title>Filmoteka</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav__container">
+          <div class="nav__logo">
+            <a href="./index.html">
+              <img
+                class="logo__img"
+                src="./images/logo/logo.png"
+                alt="movie-logo"
+              />
+              <span class="logo__title">Filmoteka</span>
+            </a>
+          </div>
+          <div class="nav__list">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item--accent">
+                <a class="navigation__link link" href="./index.html">Home</a>
+              </li>
+              <li class="navigation__item navigation__margin">
+                <a class="navigation__link link" href="./my-library.html"
+                  >My Library</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="search__container">
+          <form class="search-form" id="search-form">
+            <input
+              class="input__box"
+              type="text"
+              name="searchQuery"
+              autocomplete="off"
+              placeholder="Searching movies..."
+            />
+            <button class="search__btn" type="submit" name="submitBtn">
+              <svg class="search__icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-search_btn"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="search__result"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="movie__gallery">
+        <h1 hidden>Movie Gallery</h1>
+        <div class="movie__container container"></div>
+        <ul class="movie__pagination"></ul>
+      </section>
+    </main>
+
+    <footer class="footer__page">
+      <div class="container">
+        <p class="footer__page-lead">
+          &COPY; 2021 | All Rights Reserved | Developed with
+          <span class="footer__page-dev">
+            <svg class="footer__page-icon" width="14px" height="13px">
+              <use href="./images/icons.svg#icon-heart"></use>
+            </svg>
+            by
+            <a href="#" class="footer__page-link link-style" data-modal-open
+              ><span class="footer__underline">GoIT Students</span></a
+            >
+          </span>
+        </p>
+      </div>
+
+      <div class="loader-overlay">
+        <div class="loader"></div>
+      </div>
+
+      <!-- The Modal Team-Footer Window -->
+     
+    </footer>
+
+    <!-- The Modal Movie Cart-->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-view">
+          The server coudn't load this cart. Try again!
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
